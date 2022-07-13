@@ -1,0 +1,133 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: #fdfdfd;
+}
+
+.app > h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.select {
+  display: flex;
+  gap: 15px;
+}
+
+.select > h3 {
+  font-weight: 300;
+}
+
+.select > select {
+  height: 25px;
+  width: 80px;
+  font-size: 15px;
+}
+
+.container_flex {
+  display: flex;
+  gap: 20px;
+  width: 40%;
+}
+
+.container_songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  gap: 20px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 5px 17px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 5px 10px -7px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.container_songs:hover {
+  transform: translateY(-3px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 350px);
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  background: rgb(242, 242, 242);
+  gap: 20px;
+}
+
+.modal > button {
+  background: rgb(242, 242, 242);
+  font-size: 20px;
+  border: none;
+  width: 10px;
+  cursor: pointer;
+}
+
+.left {
+  height: 100%;
+  width: 40%;
+}
+
+.left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  height: 100%;
+  width: 60%;
+}
+
+.right_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_top > p {
+  font-size: 25px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

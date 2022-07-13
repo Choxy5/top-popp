@@ -1,0 +1,45 @@
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 350px);
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  background: rgb(242, 242, 242);
+  gap: 20px;
+}
+
+.modal > button {
+  background: rgb(242, 242, 242);
+  font-size: 20px;
+  border: none;
+  width: 10px;
+  cursor: pointer;
+}
+
+.left {
+  height: 100%;
+  width: 40%;
+}
+
+.left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  height: 100%;
+  width: 60%;
+}
+
+.right_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_top > p {
+  font-size: 25px;
+}
